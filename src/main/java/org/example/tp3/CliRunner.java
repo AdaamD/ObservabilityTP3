@@ -69,7 +69,7 @@ public class CliRunner implements CommandLineRunner {
         }
     }
 
-    private void createUser(Scanner scanner) {
+    void createUser(Scanner scanner) {
         System.out.println("Enter user details:");
         System.out.print("Name: ");
         String name = scanner.nextLine();
@@ -91,7 +91,7 @@ public class CliRunner implements CommandLineRunner {
         System.out.println("User created successfully with ID: " + createdUser.getId());
     }
 
-    private void displayProducts() {
+    void displayProducts() {
         List<Product> products = productService.getAllProducts();
         if (products.isEmpty()) {
             System.out.println("No products found.");
@@ -103,7 +103,7 @@ public class CliRunner implements CommandLineRunner {
         }
     }
 
-    private void fetchProductById(Scanner scanner) {
+    void fetchProductById(Scanner scanner) {
         System.out.print("Enter product ID: ");
         Long id = scanner.nextLong();
         scanner.nextLine(); // Consume newline
@@ -116,7 +116,7 @@ public class CliRunner implements CommandLineRunner {
         }
     }
 
-    private void addNewProduct(Scanner scanner) {
+    void addNewProduct(Scanner scanner) {
         System.out.println("Enter product details:");
         System.out.print("Name: ");
         String name = scanner.nextLine();
@@ -139,7 +139,7 @@ public class CliRunner implements CommandLineRunner {
         }
     }
 
-    private void deleteProduct(Scanner scanner) {
+    void deleteProduct(Scanner scanner) {
         System.out.print("Enter product ID to delete: ");
         Long id = scanner.nextLong();
         scanner.nextLine(); // Consume newline
@@ -152,7 +152,7 @@ public class CliRunner implements CommandLineRunner {
         }
     }
 
-    private void updateProduct(Scanner scanner) {
+    void updateProduct(Scanner scanner) {
         System.out.print("Enter product ID to update: ");
         Long id = scanner.nextLong();
         scanner.nextLine(); // Consume newline
@@ -185,4 +185,6 @@ public class CliRunner implements CommandLineRunner {
             System.out.println(e.getMessage());
         }
     }
+
+
 }
