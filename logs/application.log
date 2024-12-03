@@ -1,0 +1,751 @@
+2024-11-15T11:29:05.124+01:00  INFO 1972 --- [TP3] [main] org.example.tp3.Tp3Application           : Starting Tp3Application using Java 21.0.1 with PID 1972 (C:\Users\adam_\Desktop\Evolution_Restruc_Log\TP3\TP3\target\classes started by Random in C:\Users\adam_\Desktop\Evolution_Restruc_Log\TP3\TP3)
+2024-11-15T11:29:05.139+01:00 DEBUG 1972 --- [TP3] [main] org.example.tp3.Tp3Application           : Running with Spring Boot v3.3.4, Spring v6.1.13
+2024-11-15T11:29:05.141+01:00  INFO 1972 --- [TP3] [main] org.example.tp3.Tp3Application           : No active profile set, falling back to 1 default profile: "default"
+2024-11-15T11:29:05.953+01:00  INFO 1972 --- [TP3] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2024-11-15T11:29:05.953+01:00  INFO 1972 --- [TP3] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-15T11:29:06.015+01:00  INFO 1972 --- [TP3] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 52 ms. Found 2 JPA repository interfaces.
+2024-11-15T11:29:06.298+01:00  INFO 1972 --- [TP3] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2024-11-15T11:29:06.299+01:00  INFO 1972 --- [TP3] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2024-11-15T11:29:06.312+01:00  INFO 1972 --- [TP3] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 12 ms. Found 0 MongoDB repository interfaces.
+2024-11-15T11:29:07.182+01:00  INFO 1972 --- [TP3] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-11-15T11:29:07.206+01:00  INFO 1972 --- [TP3] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-11-15T11:29:07.206+01:00  INFO 1972 --- [TP3] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-11-15T11:29:07.284+01:00  INFO 1972 --- [TP3] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-11-15T11:29:07.284+01:00  INFO 1972 --- [TP3] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2039 ms
+2024-11-15T11:29:07.321+01:00  INFO 1972 --- [TP3] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-11-15T11:29:07.718+01:00  INFO 1972 --- [TP3] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:file:./data/productdb user=SA
+2024-11-15T11:29:07.720+01:00  INFO 1972 --- [TP3] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-11-15T11:29:07.735+01:00  INFO 1972 --- [TP3] [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./data/productdb'
+2024-11-15T11:29:07.923+01:00  INFO 1972 --- [TP3] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-15T11:29:08.036+01:00  INFO 1972 --- [TP3] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-11-15T11:29:08.098+01:00  INFO 1972 --- [TP3] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-11-15T11:29:08.546+01:00  INFO 1972 --- [TP3] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-15T11:29:08.625+01:00  WARN 1972 --- [TP3] [main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-11-15T11:29:09.636+01:00  INFO 1972 --- [TP3] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-11-15T11:29:09.703+01:00  INFO 1972 --- [TP3] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-15T11:29:10.042+01:00  WARN 1972 --- [TP3] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-15T11:29:10.601+01:00  INFO 1972 --- [TP3] [main] org.mongodb.driver.client                : MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "5.0.1"}, "os": {"type": "Windows", "name": "Windows 10", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Oracle Corporation/21.0.1+12-LTS-29"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, transportSettings=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@41538150, com.mongodb.Jep395RecordCodecProvider@1360ef8d, com.mongodb.KotlinCodecProvider@44d2bbc0]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[localhost:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='15 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, dnsClient=null, inetAddressResolver=null, contextProvider=null}
+2024-11-15T11:29:10.625+01:00  INFO 1972 --- [TP3] [cluster-ClusterId{value='67372276f9635c70ea1fedaa', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=21, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=32189500}
+2024-11-15T11:29:10.919+01:00  INFO 1972 --- [TP3] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-11-15T11:29:10.928+01:00  INFO 1972 --- [TP3] [main] org.example.tp3.Tp3Application           : Started Tp3Application in 6.732 seconds (process running for 8.2)
+2024-11-15T11:31:37.179+01:00  INFO 1972 --- [TP3] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-15T11:31:37.182+01:00  INFO 1972 --- [TP3] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-11-15T11:31:37.184+01:00  INFO 1972 --- [TP3] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-11-15T11:31:46.953+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Starting MainScenarioSimulator using Java 21.0.1 with PID 13496 (C:\Users\adam_\Desktop\Evolution_Restruc_Log\TP3\TP3\target\classes started by Random in C:\Users\adam_\Desktop\Evolution_Restruc_Log\TP3\TP3)
+2024-11-15T11:31:46.956+01:00 DEBUG 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Running with Spring Boot v3.3.4, Spring v6.1.13
+2024-11-15T11:31:46.957+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : No active profile set, falling back to 1 default profile: "default"
+2024-11-15T11:31:47.630+01:00  INFO 13496 --- [TP3] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2024-11-15T11:31:47.630+01:00  INFO 13496 --- [TP3] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-15T11:31:47.696+01:00  INFO 13496 --- [TP3] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 54 ms. Found 2 JPA repository interfaces.
+2024-11-15T11:31:47.987+01:00  INFO 13496 --- [TP3] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2024-11-15T11:31:47.988+01:00  INFO 13496 --- [TP3] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2024-11-15T11:31:48.001+01:00  INFO 13496 --- [TP3] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 11 ms. Found 0 MongoDB repository interfaces.
+2024-11-15T11:31:48.641+01:00  INFO 13496 --- [TP3] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-11-15T11:31:48.657+01:00  INFO 13496 --- [TP3] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-11-15T11:31:48.658+01:00  INFO 13496 --- [TP3] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-11-15T11:31:48.733+01:00  INFO 13496 --- [TP3] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-11-15T11:31:48.734+01:00  INFO 13496 --- [TP3] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1704 ms
+2024-11-15T11:31:48.767+01:00  INFO 13496 --- [TP3] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-11-15T11:31:49.043+01:00  INFO 13496 --- [TP3] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:file:./data/productdb user=SA
+2024-11-15T11:31:49.045+01:00  INFO 13496 --- [TP3] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-11-15T11:31:49.058+01:00  INFO 13496 --- [TP3] [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./data/productdb'
+2024-11-15T11:31:49.213+01:00  INFO 13496 --- [TP3] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-15T11:31:49.282+01:00  INFO 13496 --- [TP3] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-11-15T11:31:49.320+01:00  INFO 13496 --- [TP3] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-11-15T11:31:49.670+01:00  INFO 13496 --- [TP3] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-15T11:31:49.721+01:00  WARN 13496 --- [TP3] [main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-11-15T11:31:50.618+01:00  INFO 13496 --- [TP3] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-11-15T11:31:50.669+01:00  INFO 13496 --- [TP3] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-15T11:31:50.963+01:00  WARN 13496 --- [TP3] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-15T11:31:51.424+01:00  INFO 13496 --- [TP3] [main] org.mongodb.driver.client                : MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "5.0.1"}, "os": {"type": "Windows", "name": "Windows 10", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Oracle Corporation/21.0.1+12-LTS-29"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, transportSettings=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@30cb489a, com.mongodb.Jep395RecordCodecProvider@401d83ce, com.mongodb.KotlinCodecProvider@3b7b099b]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[localhost:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='15 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, dnsClient=null, inetAddressResolver=null, contextProvider=null}
+2024-11-15T11:31:51.438+01:00  INFO 13496 --- [TP3] [cluster-ClusterId{value='673723172dda4d3e27023f76', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=21, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=25081600}
+2024-11-15T11:31:51.674+01:00  INFO 13496 --- [TP3] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-11-15T11:31:51.683+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Started MainScenarioSimulator in 5.449 seconds (process running for 6.46)
+2024-11-15T11:31:53.083+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Simulating scenarios...
+
+2024-11-15T11:31:53.084+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    :    Simulating scenarios for user: user1
+2024-11-15T11:31:53.085+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : User user1 is displaying all products
+2024-11-15T11:31:53.221+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : User user1 is deleting product with ID: 93
+2024-11-15T11:31:53.230+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product with ID 93 not found or could not be deleted
+2024-11-15T11:31:53.231+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : User user1 is creating a new user
+2024-11-15T11:31:53.268+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : New user created: Name50
+2024-11-15T11:31:53.268+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : User user1 is updating product with ID: 25
+2024-11-15T11:31:53.269+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product with ID 25 not found or could not be updated
+2024-11-15T11:31:53.269+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : User user1 is adding a new product
+2024-11-15T11:31:53.272+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : New product added: Product252
+2024-11-15T11:31:53.272+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : User user1 is displaying all products
+2024-11-15T11:31:53.276+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product: Product252, Price: 134.93
+2024-11-15T11:31:53.276+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : User user1 is creating a new user
+2024-11-15T11:31:53.278+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : New user created: Name26
+2024-11-15T11:31:53.278+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : User user1 is fetching product with ID: 16
+2024-11-15T11:31:53.279+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product with ID 16 not found
+2024-11-15T11:31:53.279+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : User user1 is displaying all products
+2024-11-15T11:31:53.280+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product: Product252, Price: 134.93
+2024-11-15T11:31:53.280+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : User user1 is adding a new product
+2024-11-15T11:31:53.281+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : New product added: Product473
+2024-11-15T11:31:53.281+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : User user1 is deleting product with ID: 68
+2024-11-15T11:31:53.282+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product with ID 68 not found or could not be deleted
+2024-11-15T11:31:53.282+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : User user1 is deleting product with ID: 19
+2024-11-15T11:31:53.282+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product with ID 19 not found or could not be deleted
+2024-11-15T11:31:53.282+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : User user1 is fetching product with ID: 47
+2024-11-15T11:31:53.283+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product with ID 47 not found
+2024-11-15T11:31:53.283+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : User user1 is displaying all products
+2024-11-15T11:31:53.285+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product: Product252, Price: 134.93
+2024-11-15T11:31:53.285+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product: Product473, Price: 347.10
+2024-11-15T11:31:53.295+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : User user1 is fetching product with ID: 70
+2024-11-15T11:31:53.296+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product with ID 70 not found
+2024-11-15T11:31:53.296+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : User user1 is creating a new user
+2024-11-15T11:31:53.298+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : New user created: Name30
+2024-11-15T11:31:53.298+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : User user1 is displaying all products
+2024-11-15T11:31:53.301+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product: Product252, Price: 134.93
+2024-11-15T11:31:53.301+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product: Product473, Price: 347.10
+2024-11-15T11:31:53.301+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : User user1 is creating a new user
+2024-11-15T11:31:53.303+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : New user created: Name13
+2024-11-15T11:31:53.303+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : User user1 is fetching product with ID: 24
+2024-11-15T11:31:53.304+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product with ID 24 not found
+2024-11-15T11:31:53.304+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : User user1 is deleting product with ID: 54
+2024-11-15T11:31:53.305+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product with ID 54 not found or could not be deleted
+2024-11-15T11:31:53.305+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    :    Simulating scenarios for user: user2
+2024-11-15T11:31:53.305+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : User user2 is creating a new user
+2024-11-15T11:31:53.307+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : New user created: Name39
+2024-11-15T11:31:53.308+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : User user2 is displaying all products
+2024-11-15T11:31:53.310+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product: Product252, Price: 134.93
+2024-11-15T11:31:53.310+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product: Product473, Price: 347.10
+2024-11-15T11:31:53.310+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : User user2 is creating a new user
+2024-11-15T11:31:53.312+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : New user created: Name28
+2024-11-15T11:31:53.312+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : User user2 is updating product with ID: 21
+2024-11-15T11:31:53.314+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product with ID 21 not found or could not be updated
+2024-11-15T11:31:53.314+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : User user2 is displaying all products
+2024-11-15T11:31:53.316+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product: Product252, Price: 134.93
+2024-11-15T11:31:53.316+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product: Product473, Price: 347.10
+2024-11-15T11:31:53.316+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : User user2 is updating product with ID: 23
+2024-11-15T11:31:53.317+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product with ID 23 not found or could not be updated
+2024-11-15T11:31:53.317+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : User user2 is deleting product with ID: 32
+2024-11-15T11:31:53.318+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product with ID 32 not found or could not be deleted
+2024-11-15T11:31:53.319+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : User user2 is displaying all products
+2024-11-15T11:31:53.320+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product: Product252, Price: 134.93
+2024-11-15T11:31:53.321+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product: Product473, Price: 347.10
+2024-11-15T11:31:53.321+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : User user2 is updating product with ID: 29
+2024-11-15T11:31:53.323+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product with ID 29 not found or could not be updated
+2024-11-15T11:31:53.323+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : User user2 is creating a new user
+2024-11-15T11:31:53.325+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : New user created: Name79
+2024-11-15T11:31:53.325+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : User user2 is fetching product with ID: 21
+2024-11-15T11:31:53.326+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product with ID 21 not found
+2024-11-15T11:31:53.326+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : User user2 is deleting product with ID: 7
+2024-11-15T11:31:53.327+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product with ID 7 not found or could not be deleted
+2024-11-15T11:31:53.327+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : User user2 is updating product with ID: 44
+2024-11-15T11:31:53.329+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product with ID 44 not found or could not be updated
+2024-11-15T11:31:53.329+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : User user2 is creating a new user
+2024-11-15T11:31:53.331+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : New user created: Name18
+2024-11-15T11:31:53.331+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : User user2 is adding a new product
+2024-11-15T11:31:53.333+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : New product added: Product54
+2024-11-15T11:31:53.333+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : User user2 is creating a new user
+2024-11-15T11:31:53.335+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : New user created: Name2
+2024-11-15T11:31:53.335+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : User user2 is displaying all products
+2024-11-15T11:31:53.338+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product: Product252, Price: 134.93
+2024-11-15T11:31:53.338+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product: Product473, Price: 347.10
+2024-11-15T11:31:53.338+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product: Product54, Price: 895.24
+2024-11-15T11:31:53.338+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : User user2 is deleting product with ID: 20
+2024-11-15T11:31:53.340+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product with ID 20 not found or could not be deleted
+2024-11-15T11:31:53.340+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : User user2 is deleting product with ID: 44
+2024-11-15T11:31:53.341+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product with ID 44 not found or could not be deleted
+2024-11-15T11:31:53.341+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : User user2 is fetching product with ID: 90
+2024-11-15T11:31:53.343+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product with ID 90 not found
+2024-11-15T11:31:53.344+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    :    Simulating scenarios for user: user3
+2024-11-15T11:31:53.344+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : User user3 is deleting product with ID: 85
+2024-11-15T11:31:53.345+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product with ID 85 not found or could not be deleted
+2024-11-15T11:31:53.345+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : User user3 is deleting product with ID: 52
+2024-11-15T11:31:53.346+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product with ID 52 not found or could not be deleted
+2024-11-15T11:31:53.346+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : User user3 is displaying all products
+2024-11-15T11:31:53.349+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product: Product252, Price: 134.93
+2024-11-15T11:31:53.349+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product: Product473, Price: 347.10
+2024-11-15T11:31:53.349+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product: Product54, Price: 895.24
+2024-11-15T11:31:53.350+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : User user3 is creating a new user
+2024-11-15T11:31:53.352+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : New user created: Name35
+2024-11-15T11:31:53.352+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : User user3 is updating product with ID: 72
+2024-11-15T11:31:53.354+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product with ID 72 not found or could not be updated
+2024-11-15T11:31:53.354+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : User user3 is updating product with ID: 40
+2024-11-15T11:31:53.355+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product with ID 40 not found or could not be updated
+2024-11-15T11:31:53.355+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : User user3 is fetching product with ID: 11
+2024-11-15T11:31:53.357+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product with ID 11 not found
+2024-11-15T11:31:53.357+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : User user3 is adding a new product
+2024-11-15T11:31:53.359+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : New product added: Product434
+2024-11-15T11:31:53.360+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : User user3 is updating product with ID: 28
+2024-11-15T11:31:53.361+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product with ID 28 not found or could not be updated
+2024-11-15T11:31:53.361+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : User user3 is adding a new product
+2024-11-15T11:31:53.362+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : New product added: Product435
+2024-11-15T11:31:53.362+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : User user3 is displaying all products
+2024-11-15T11:31:53.365+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product: Product252, Price: 134.93
+2024-11-15T11:31:53.365+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product: Product473, Price: 347.10
+2024-11-15T11:31:53.366+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product: Product54, Price: 895.24
+2024-11-15T11:31:53.366+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product: Product434, Price: 174.15
+2024-11-15T11:31:53.366+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product: Product435, Price: 315.73
+2024-11-15T11:31:53.366+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : User user3 is updating product with ID: 36
+2024-11-15T11:31:53.367+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product with ID 36 not found or could not be updated
+2024-11-15T11:31:53.367+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : User user3 is displaying all products
+2024-11-15T11:31:53.369+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product: Product252, Price: 134.93
+2024-11-15T11:31:53.369+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product: Product473, Price: 347.10
+2024-11-15T11:31:53.369+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product: Product54, Price: 895.24
+2024-11-15T11:31:53.370+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product: Product434, Price: 174.15
+2024-11-15T11:31:53.370+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product: Product435, Price: 315.73
+2024-11-15T11:31:53.370+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : User user3 is creating a new user
+2024-11-15T11:31:53.372+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : New user created: Name61
+2024-11-15T11:31:53.372+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : User user3 is creating a new user
+2024-11-15T11:31:53.374+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : New user created: Name15
+2024-11-15T11:31:53.374+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : User user3 is fetching product with ID: 27
+2024-11-15T11:31:53.375+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product with ID 27 not found
+2024-11-15T11:31:53.375+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : User user3 is deleting product with ID: 3
+2024-11-15T11:31:53.377+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product with ID 3 not found or could not be deleted
+2024-11-15T11:31:53.377+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : User user3 is deleting product with ID: 60
+2024-11-15T11:31:53.379+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product with ID 60 not found or could not be deleted
+2024-11-15T11:31:53.379+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : User user3 is adding a new product
+2024-11-15T11:31:53.381+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : New product added: Product863
+2024-11-15T11:31:53.381+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : User user3 is creating a new user
+2024-11-15T11:31:53.383+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : New user created: Name3
+2024-11-15T11:31:53.383+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    :    Simulating scenarios for user: user4
+2024-11-15T11:31:53.383+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : User user4 is creating a new user
+2024-11-15T11:31:53.386+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : New user created: Name80
+2024-11-15T11:31:53.386+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : User user4 is fetching product with ID: 48
+2024-11-15T11:31:53.387+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product with ID 48 not found
+2024-11-15T11:31:53.387+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : User user4 is fetching product with ID: 95
+2024-11-15T11:31:53.388+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product with ID 95 not found
+2024-11-15T11:31:53.388+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : User user4 is creating a new user
+2024-11-15T11:31:53.391+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : New user created: Name77
+2024-11-15T11:31:53.392+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : User user4 is updating product with ID: 76
+2024-11-15T11:31:53.393+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product with ID 76 not found or could not be updated
+2024-11-15T11:31:53.393+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : User user4 is adding a new product
+2024-11-15T11:31:53.395+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : New product added: Product627
+2024-11-15T11:31:53.395+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : User user4 is updating product with ID: 55
+2024-11-15T11:31:53.396+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product with ID 55 not found or could not be updated
+2024-11-15T11:31:53.396+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : User user4 is displaying all products
+2024-11-15T11:31:53.399+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product: Product252, Price: 134.93
+2024-11-15T11:31:53.400+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product: Product473, Price: 347.10
+2024-11-15T11:31:53.400+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product: Product54, Price: 895.24
+2024-11-15T11:31:53.400+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product: Product434, Price: 174.15
+2024-11-15T11:31:53.400+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product: Product435, Price: 315.73
+2024-11-15T11:31:53.400+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product: Product863, Price: 31.46
+2024-11-15T11:31:53.400+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product: Product627, Price: 503.35
+2024-11-15T11:31:53.400+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : User user4 is deleting product with ID: 57
+2024-11-15T11:31:53.402+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product with ID 57 not found or could not be deleted
+2024-11-15T11:31:53.402+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : User user4 is displaying all products
+2024-11-15T11:31:53.406+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product: Product252, Price: 134.93
+2024-11-15T11:31:53.406+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product: Product473, Price: 347.10
+2024-11-15T11:31:53.407+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product: Product54, Price: 895.24
+2024-11-15T11:31:53.407+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product: Product434, Price: 174.15
+2024-11-15T11:31:53.407+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product: Product435, Price: 315.73
+2024-11-15T11:31:53.407+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product: Product863, Price: 31.46
+2024-11-15T11:31:53.407+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product: Product627, Price: 503.35
+2024-11-15T11:31:53.407+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : User user4 is deleting product with ID: 100
+2024-11-15T11:31:53.408+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product with ID 100 not found or could not be deleted
+2024-11-15T11:31:53.408+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : User user4 is updating product with ID: 15
+2024-11-15T11:31:53.409+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product with ID 15 not found or could not be updated
+2024-11-15T11:31:53.409+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : User user4 is displaying all products
+2024-11-15T11:31:53.411+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product: Product252, Price: 134.93
+2024-11-15T11:31:53.411+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product: Product473, Price: 347.10
+2024-11-15T11:31:53.411+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product: Product54, Price: 895.24
+2024-11-15T11:31:53.411+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product: Product434, Price: 174.15
+2024-11-15T11:31:53.411+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product: Product435, Price: 315.73
+2024-11-15T11:31:53.411+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product: Product863, Price: 31.46
+2024-11-15T11:31:53.411+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product: Product627, Price: 503.35
+2024-11-15T11:31:53.411+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : User user4 is adding a new product
+2024-11-15T11:31:53.413+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : New product added: Product601
+2024-11-15T11:31:53.413+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : User user4 is displaying all products
+2024-11-15T11:31:53.416+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product: Product252, Price: 134.93
+2024-11-15T11:31:53.416+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product: Product473, Price: 347.10
+2024-11-15T11:31:53.417+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product: Product54, Price: 895.24
+2024-11-15T11:31:53.417+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product: Product434, Price: 174.15
+2024-11-15T11:31:53.417+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product: Product435, Price: 315.73
+2024-11-15T11:31:53.417+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product: Product863, Price: 31.46
+2024-11-15T11:31:53.417+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product: Product627, Price: 503.35
+2024-11-15T11:31:53.417+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product: Product601, Price: 715.21
+2024-11-15T11:31:53.417+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : User user4 is creating a new user
+2024-11-15T11:31:53.419+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : New user created: Name91
+2024-11-15T11:31:53.419+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : User user4 is adding a new product
+2024-11-15T11:31:53.420+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : New product added: Product558
+2024-11-15T11:31:53.421+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : User user4 is displaying all products
+2024-11-15T11:31:53.427+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product: Product252, Price: 134.93
+2024-11-15T11:31:53.427+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product: Product473, Price: 347.10
+2024-11-15T11:31:53.427+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product: Product54, Price: 895.24
+2024-11-15T11:31:53.427+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product: Product434, Price: 174.15
+2024-11-15T11:31:53.427+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product: Product435, Price: 315.73
+2024-11-15T11:31:53.427+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product: Product863, Price: 31.46
+2024-11-15T11:31:53.427+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product: Product627, Price: 503.35
+2024-11-15T11:31:53.428+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product: Product601, Price: 715.21
+2024-11-15T11:31:53.428+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product: Product558, Price: 344.51
+2024-11-15T11:31:53.428+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : User user4 is deleting product with ID: 4
+2024-11-15T11:31:53.429+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product with ID 4 not found or could not be deleted
+2024-11-15T11:31:53.429+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : User user4 is creating a new user
+2024-11-15T11:31:53.431+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : New user created: Name53
+2024-11-15T11:31:53.432+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    :    Simulating scenarios for user: user5
+2024-11-15T11:31:53.432+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : User user5 is fetching product with ID: 64
+2024-11-15T11:31:53.434+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product with ID 64 not found
+2024-11-15T11:31:53.434+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : User user5 is updating product with ID: 53
+2024-11-15T11:31:53.435+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product with ID 53 not found or could not be updated
+2024-11-15T11:31:53.436+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : User user5 is fetching product with ID: 28
+2024-11-15T11:31:53.437+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product with ID 28 not found
+2024-11-15T11:31:53.437+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : User user5 is deleting product with ID: 63
+2024-11-15T11:31:53.438+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product with ID 63 not found or could not be deleted
+2024-11-15T11:31:53.438+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : User user5 is creating a new user
+2024-11-15T11:31:53.440+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : New user created: Name4
+2024-11-15T11:31:53.440+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : User user5 is deleting product with ID: 41
+2024-11-15T11:31:53.442+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product with ID 41 not found or could not be deleted
+2024-11-15T11:31:53.442+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : User user5 is displaying all products
+2024-11-15T11:31:53.445+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product: Product252, Price: 134.93
+2024-11-15T11:31:53.445+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product: Product473, Price: 347.10
+2024-11-15T11:31:53.445+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product: Product54, Price: 895.24
+2024-11-15T11:31:53.445+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product: Product434, Price: 174.15
+2024-11-15T11:31:53.445+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product: Product435, Price: 315.73
+2024-11-15T11:31:53.445+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product: Product863, Price: 31.46
+2024-11-15T11:31:53.445+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product: Product627, Price: 503.35
+2024-11-15T11:31:53.445+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product: Product601, Price: 715.21
+2024-11-15T11:31:53.445+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product: Product558, Price: 344.51
+2024-11-15T11:31:53.445+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : User user5 is deleting product with ID: 57
+2024-11-15T11:31:53.446+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product with ID 57 not found or could not be deleted
+2024-11-15T11:31:53.446+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : User user5 is displaying all products
+2024-11-15T11:31:53.449+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product: Product252, Price: 134.93
+2024-11-15T11:31:53.449+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product: Product473, Price: 347.10
+2024-11-15T11:31:53.449+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product: Product54, Price: 895.24
+2024-11-15T11:31:53.449+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product: Product434, Price: 174.15
+2024-11-15T11:31:53.449+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product: Product435, Price: 315.73
+2024-11-15T11:31:53.449+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product: Product863, Price: 31.46
+2024-11-15T11:31:53.449+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product: Product627, Price: 503.35
+2024-11-15T11:31:53.449+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product: Product601, Price: 715.21
+2024-11-15T11:31:53.449+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product: Product558, Price: 344.51
+2024-11-15T11:31:53.449+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : User user5 is adding a new product
+2024-11-15T11:31:53.451+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : New product added: Product877
+2024-11-15T11:31:53.451+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : User user5 is fetching product with ID: 100
+2024-11-15T11:31:53.452+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product with ID 100 not found
+2024-11-15T11:31:53.453+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : User user5 is deleting product with ID: 49
+2024-11-15T11:31:53.454+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product with ID 49 not found or could not be deleted
+2024-11-15T11:31:53.454+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : User user5 is deleting product with ID: 67
+2024-11-15T11:31:53.455+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product with ID 67 not found or could not be deleted
+2024-11-15T11:31:53.455+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : User user5 is displaying all products
+2024-11-15T11:31:53.457+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product: Product252, Price: 134.93
+2024-11-15T11:31:53.458+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product: Product473, Price: 347.10
+2024-11-15T11:31:53.458+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product: Product54, Price: 895.24
+2024-11-15T11:31:53.458+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product: Product434, Price: 174.15
+2024-11-15T11:31:53.458+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product: Product435, Price: 315.73
+2024-11-15T11:31:53.458+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product: Product863, Price: 31.46
+2024-11-15T11:31:53.458+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product: Product627, Price: 503.35
+2024-11-15T11:31:53.458+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product: Product601, Price: 715.21
+2024-11-15T11:31:53.458+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product: Product558, Price: 344.51
+2024-11-15T11:31:53.458+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product: Product877, Price: 330.86
+2024-11-15T11:31:53.458+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : User user5 is fetching product with ID: 50
+2024-11-15T11:31:53.459+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product with ID 50 not found
+2024-11-15T11:31:53.459+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : User user5 is fetching product with ID: 76
+2024-11-15T11:31:53.460+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product with ID 76 not found
+2024-11-15T11:31:53.460+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : User user5 is displaying all products
+2024-11-15T11:31:53.462+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product: Product252, Price: 134.93
+2024-11-15T11:31:53.462+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product: Product473, Price: 347.10
+2024-11-15T11:31:53.462+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product: Product54, Price: 895.24
+2024-11-15T11:31:53.462+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product: Product434, Price: 174.15
+2024-11-15T11:31:53.462+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product: Product435, Price: 315.73
+2024-11-15T11:31:53.462+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product: Product863, Price: 31.46
+2024-11-15T11:31:53.462+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product: Product627, Price: 503.35
+2024-11-15T11:31:53.462+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product: Product601, Price: 715.21
+2024-11-15T11:31:53.462+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product: Product558, Price: 344.51
+2024-11-15T11:31:53.462+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product: Product877, Price: 330.86
+2024-11-15T11:31:53.463+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : User user5 is fetching product with ID: 30
+2024-11-15T11:31:53.463+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product with ID 30 not found
+2024-11-15T11:31:53.463+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : User user5 is creating a new user
+2024-11-15T11:31:53.465+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : New user created: Name57
+2024-11-15T11:31:53.465+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : User user5 is updating product with ID: 97
+2024-11-15T11:31:53.465+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product with ID 97 not found or could not be updated
+2024-11-15T11:31:53.465+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Scenarios simulation completed.
+
+2024-11-15T11:31:53.539+01:00  INFO 13496 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : User profiles have been saved to user_profiles.json
+2024-11-15T11:32:44.747+01:00  INFO 13496 --- [TP3] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-15T11:32:44.749+01:00  INFO 13496 --- [TP3] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-11-15T11:32:44.750+01:00  INFO 13496 --- [TP3] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-11-15T11:34:35.884+01:00  INFO 10656 --- [TP3] [main] org.example.tp3.Tp3Application           : Starting Tp3Application using Java 21.0.1 with PID 10656 (C:\Users\adam_\Desktop\Evolution_Restruc_Log\TP3\TP3\target\classes started by Random in C:\Users\adam_\Desktop\Evolution_Restruc_Log\TP3\TP3)
+2024-11-15T11:34:35.889+01:00 DEBUG 10656 --- [TP3] [main] org.example.tp3.Tp3Application           : Running with Spring Boot v3.3.4, Spring v6.1.13
+2024-11-15T11:34:35.891+01:00  INFO 10656 --- [TP3] [main] org.example.tp3.Tp3Application           : No active profile set, falling back to 1 default profile: "default"
+2024-11-15T11:34:36.942+01:00  INFO 10656 --- [TP3] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2024-11-15T11:34:36.943+01:00  INFO 10656 --- [TP3] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-15T11:34:37.033+01:00  INFO 10656 --- [TP3] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 76 ms. Found 2 JPA repository interfaces.
+2024-11-15T11:34:37.398+01:00  INFO 10656 --- [TP3] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2024-11-15T11:34:37.398+01:00  INFO 10656 --- [TP3] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2024-11-15T11:34:37.412+01:00  INFO 10656 --- [TP3] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 13 ms. Found 0 MongoDB repository interfaces.
+2024-11-15T11:34:38.209+01:00  INFO 10656 --- [TP3] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-11-15T11:34:38.233+01:00  INFO 10656 --- [TP3] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-11-15T11:34:38.234+01:00  INFO 10656 --- [TP3] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-11-15T11:34:38.319+01:00  INFO 10656 --- [TP3] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-11-15T11:34:38.320+01:00  INFO 10656 --- [TP3] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2286 ms
+2024-11-15T11:34:38.370+01:00  INFO 10656 --- [TP3] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-11-15T11:34:38.757+01:00  INFO 10656 --- [TP3] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:file:./data/productdb user=SA
+2024-11-15T11:34:38.759+01:00  INFO 10656 --- [TP3] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-11-15T11:34:38.784+01:00  INFO 10656 --- [TP3] [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./data/productdb'
+2024-11-15T11:34:38.984+01:00  INFO 10656 --- [TP3] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-15T11:34:39.088+01:00  INFO 10656 --- [TP3] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-11-15T11:34:39.143+01:00  INFO 10656 --- [TP3] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-11-15T11:34:39.670+01:00  INFO 10656 --- [TP3] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-15T11:34:39.736+01:00  WARN 10656 --- [TP3] [main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-11-15T11:34:40.937+01:00  INFO 10656 --- [TP3] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-11-15T11:34:41.002+01:00  INFO 10656 --- [TP3] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-15T11:34:41.479+01:00  WARN 10656 --- [TP3] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-15T11:34:42.141+01:00  INFO 10656 --- [TP3] [main] org.mongodb.driver.client                : MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "5.0.1"}, "os": {"type": "Windows", "name": "Windows 10", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Oracle Corporation/21.0.1+12-LTS-29"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, transportSettings=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@27ea552d, com.mongodb.Jep395RecordCodecProvider@7a57c5d9, com.mongodb.KotlinCodecProvider@742aa00a]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[localhost:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='15 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, dnsClient=null, inetAddressResolver=null, contextProvider=null}
+2024-11-15T11:34:42.160+01:00  INFO 10656 --- [TP3] [cluster-ClusterId{value='673723c20478074324fc8daa', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=21, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=36978000}
+2024-11-15T11:34:42.530+01:00  INFO 10656 --- [TP3] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-11-15T11:34:42.541+01:00  INFO 10656 --- [TP3] [main] org.example.tp3.Tp3Application           : Started Tp3Application in 7.621 seconds (process running for 9.198)
+2024-11-15T11:36:31.087+01:00  INFO 10656 --- [TP3] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-15T11:36:31.090+01:00  INFO 10656 --- [TP3] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-11-15T11:36:31.094+01:00  INFO 10656 --- [TP3] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-11-15T11:36:36.161+01:00  INFO 13608 --- [TP3] [main] org.example.tp3.Tp3Application           : Starting Tp3Application using Java 21.0.1 with PID 13608 (C:\Users\adam_\Desktop\Evolution_Restruc_Log\TP3\TP3\target\classes started by Random in C:\Users\adam_\Desktop\Evolution_Restruc_Log\TP3\TP3)
+2024-11-15T11:36:36.166+01:00 DEBUG 13608 --- [TP3] [main] org.example.tp3.Tp3Application           : Running with Spring Boot v3.3.4, Spring v6.1.13
+2024-11-15T11:36:36.168+01:00  INFO 13608 --- [TP3] [main] org.example.tp3.Tp3Application           : No active profile set, falling back to 1 default profile: "default"
+2024-11-15T11:36:37.206+01:00  INFO 13608 --- [TP3] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2024-11-15T11:36:37.207+01:00  INFO 13608 --- [TP3] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-15T11:36:37.299+01:00  INFO 13608 --- [TP3] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 74 ms. Found 2 JPA repository interfaces.
+2024-11-15T11:36:37.667+01:00  INFO 13608 --- [TP3] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2024-11-15T11:36:37.668+01:00  INFO 13608 --- [TP3] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2024-11-15T11:36:37.685+01:00  INFO 13608 --- [TP3] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 16 ms. Found 0 MongoDB repository interfaces.
+2024-11-15T11:36:38.447+01:00  INFO 13608 --- [TP3] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-11-15T11:36:38.472+01:00  INFO 13608 --- [TP3] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-11-15T11:36:38.473+01:00  INFO 13608 --- [TP3] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-11-15T11:36:38.576+01:00  INFO 13608 --- [TP3] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-11-15T11:36:38.577+01:00  INFO 13608 --- [TP3] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2294 ms
+2024-11-15T11:36:38.622+01:00  INFO 13608 --- [TP3] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-11-15T11:36:38.999+01:00  INFO 13608 --- [TP3] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:file:./data/productdb user=SA
+2024-11-15T11:36:39.001+01:00  INFO 13608 --- [TP3] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-11-15T11:36:39.016+01:00  INFO 13608 --- [TP3] [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./data/productdb'
+2024-11-15T11:36:39.210+01:00  INFO 13608 --- [TP3] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-15T11:36:39.311+01:00  INFO 13608 --- [TP3] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-11-15T11:36:39.366+01:00  INFO 13608 --- [TP3] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-11-15T11:36:39.913+01:00  INFO 13608 --- [TP3] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-15T11:36:39.988+01:00  WARN 13608 --- [TP3] [main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-11-15T11:36:41.439+01:00  INFO 13608 --- [TP3] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-11-15T11:36:41.543+01:00  INFO 13608 --- [TP3] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-15T11:36:42.005+01:00  WARN 13608 --- [TP3] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-15T11:36:42.706+01:00  INFO 13608 --- [TP3] [main] org.mongodb.driver.client                : MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "5.0.1"}, "os": {"type": "Windows", "name": "Windows 10", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Oracle Corporation/21.0.1+12-LTS-29"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, transportSettings=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@6bc08a77, com.mongodb.Jep395RecordCodecProvider@37922937, com.mongodb.KotlinCodecProvider@73483d4b]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[localhost:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='15 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, dnsClient=null, inetAddressResolver=null, contextProvider=null}
+2024-11-15T11:36:42.720+01:00  INFO 13608 --- [TP3] [cluster-ClusterId{value='6737243a58a4427e60495b67', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=21, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=37949500}
+2024-11-15T11:36:43.043+01:00  INFO 13608 --- [TP3] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-11-15T11:36:43.054+01:00  INFO 13608 --- [TP3] [main] org.example.tp3.Tp3Application           : Started Tp3Application in 7.734 seconds (process running for 9.208)
+2024-11-15T11:38:51.266+01:00  INFO 13608 --- [TP3] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-15T11:38:51.268+01:00  INFO 13608 --- [TP3] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-11-15T11:38:51.269+01:00  INFO 13608 --- [TP3] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-11-15T11:40:00.776+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Starting MainScenarioSimulator using Java 21.0.1 with PID 4592 (C:\Users\adam_\Desktop\Evolution_Restruc_Log\TP3\TP3\target\classes started by Random in C:\Users\adam_\Desktop\Evolution_Restruc_Log\TP3\TP3)
+2024-11-15T11:40:00.779+01:00 DEBUG 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Running with Spring Boot v3.3.4, Spring v6.1.13
+2024-11-15T11:40:00.781+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : No active profile set, falling back to 1 default profile: "default"
+2024-11-15T11:40:02.216+01:00  INFO 4592 --- [TP3] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2024-11-15T11:40:02.217+01:00  INFO 4592 --- [TP3] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-15T11:40:02.335+01:00  INFO 4592 --- [TP3] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 97 ms. Found 2 JPA repository interfaces.
+2024-11-15T11:40:02.847+01:00  INFO 4592 --- [TP3] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2024-11-15T11:40:02.848+01:00  INFO 4592 --- [TP3] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2024-11-15T11:40:02.893+01:00  INFO 4592 --- [TP3] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 44 ms. Found 0 MongoDB repository interfaces.
+2024-11-15T11:40:04.076+01:00  INFO 4592 --- [TP3] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-11-15T11:40:04.109+01:00  INFO 4592 --- [TP3] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-11-15T11:40:04.110+01:00  INFO 4592 --- [TP3] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-11-15T11:40:04.235+01:00  INFO 4592 --- [TP3] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-11-15T11:40:04.236+01:00  INFO 4592 --- [TP3] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3311 ms
+2024-11-15T11:40:04.311+01:00  INFO 4592 --- [TP3] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-11-15T11:40:04.831+01:00  INFO 4592 --- [TP3] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:file:./data/productdb user=SA
+2024-11-15T11:40:04.834+01:00  INFO 4592 --- [TP3] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-11-15T11:40:04.860+01:00  INFO 4592 --- [TP3] [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./data/productdb'
+2024-11-15T11:40:05.163+01:00  INFO 4592 --- [TP3] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-15T11:40:05.277+01:00  INFO 4592 --- [TP3] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-11-15T11:40:05.341+01:00  INFO 4592 --- [TP3] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-11-15T11:40:05.941+01:00  INFO 4592 --- [TP3] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-15T11:40:06.041+01:00  WARN 4592 --- [TP3] [main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-11-15T11:40:07.618+01:00  INFO 4592 --- [TP3] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-11-15T11:40:07.714+01:00  INFO 4592 --- [TP3] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-15T11:40:08.212+01:00  WARN 4592 --- [TP3] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-15T11:40:08.861+01:00  INFO 4592 --- [TP3] [main] org.mongodb.driver.client                : MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "5.0.1"}, "os": {"type": "Windows", "name": "Windows 10", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Oracle Corporation/21.0.1+12-LTS-29"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, transportSettings=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@3cc2c4b8, com.mongodb.Jep395RecordCodecProvider@11a29c0, com.mongodb.KotlinCodecProvider@1fc4b8d6]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[localhost:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='15 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, dnsClient=null, inetAddressResolver=null, contextProvider=null}
+2024-11-15T11:40:08.878+01:00  INFO 4592 --- [TP3] [cluster-ClusterId{value='67372508dc2b2b3bf8f3f5e8', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=21, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=43662100}
+2024-11-15T11:40:09.221+01:00  INFO 4592 --- [TP3] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-11-15T11:40:09.231+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Started MainScenarioSimulator in 9.316 seconds (process running for 10.592)
+2024-11-15T11:40:17.069+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Simulating scenarios...
+
+2024-11-15T11:40:17.070+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    :    Simulating scenarios for user: user1
+2024-11-15T11:40:17.070+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : User user1 is updating product with ID: 85
+2024-11-15T11:40:17.127+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product with ID 85 not found or could not be updated
+2024-11-15T11:40:17.128+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : User user1 is deleting product with ID: 69
+2024-11-15T11:40:17.129+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product with ID 69 not found or could not be deleted
+2024-11-15T11:40:17.129+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : User user1 is displaying all products
+2024-11-15T11:40:17.216+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product: tomato, Price: 1.50
+2024-11-15T11:40:17.216+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : User user1 is fetching product with ID: 41
+2024-11-15T11:40:17.217+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product with ID 41 not found
+2024-11-15T11:40:17.217+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : User user1 is deleting product with ID: 21
+2024-11-15T11:40:17.218+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product with ID 21 not found or could not be deleted
+2024-11-15T11:40:17.218+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : User user1 is fetching product with ID: 89
+2024-11-15T11:40:17.218+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product with ID 89 not found
+2024-11-15T11:40:17.218+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : User user1 is displaying all products
+2024-11-15T11:40:17.220+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product: tomato, Price: 1.50
+2024-11-15T11:40:17.220+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : User user1 is updating product with ID: 50
+2024-11-15T11:40:17.221+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product with ID 50 not found or could not be updated
+2024-11-15T11:40:17.221+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : User user1 is deleting product with ID: 20
+2024-11-15T11:40:17.221+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product with ID 20 not found or could not be deleted
+2024-11-15T11:40:17.221+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : User user1 is fetching product with ID: 2
+2024-11-15T11:40:17.222+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product with ID 2 not found
+2024-11-15T11:40:17.222+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : User user1 is fetching product with ID: 3
+2024-11-15T11:40:17.222+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product with ID 3 not found
+2024-11-15T11:40:17.223+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : User user1 is displaying all products
+2024-11-15T11:40:17.224+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product: tomato, Price: 1.50
+2024-11-15T11:40:17.224+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : User user1 is deleting product with ID: 40
+2024-11-15T11:40:17.225+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product with ID 40 not found or could not be deleted
+2024-11-15T11:40:17.225+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : User user1 is creating a new user
+2024-11-15T11:40:17.260+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : New user created: Name38
+2024-11-15T11:40:17.260+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : User user1 is updating product with ID: 30
+2024-11-15T11:40:17.261+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product with ID 30 not found or could not be updated
+2024-11-15T11:40:17.261+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : User user1 is creating a new user
+2024-11-15T11:40:17.262+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : New user created: Name57
+2024-11-15T11:40:17.262+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : User user1 is adding a new product
+2024-11-15T11:40:17.264+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : New product added: Product212
+2024-11-15T11:40:17.264+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : User user1 is creating a new user
+2024-11-15T11:40:17.266+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : New user created: Name99
+2024-11-15T11:40:17.266+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : User user1 is adding a new product
+2024-11-15T11:40:17.267+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : New product added: Product892
+2024-11-15T11:40:17.267+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : User user1 is displaying all products
+2024-11-15T11:40:17.269+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product: tomato, Price: 1.50
+2024-11-15T11:40:17.269+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product: Product212, Price: 422.95
+2024-11-15T11:40:17.269+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product: Product892, Price: 502.28
+2024-11-15T11:40:17.269+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    :    Simulating scenarios for user: user2
+2024-11-15T11:40:17.269+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : User user2 is updating product with ID: 73
+2024-11-15T11:40:17.270+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product with ID 73 not found or could not be updated
+2024-11-15T11:40:17.270+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : User user2 is fetching product with ID: 70
+2024-11-15T11:40:17.271+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product with ID 70 not found
+2024-11-15T11:40:17.271+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : User user2 is deleting product with ID: 84
+2024-11-15T11:40:17.272+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product with ID 84 not found or could not be deleted
+2024-11-15T11:40:17.272+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : User user2 is displaying all products
+2024-11-15T11:40:17.274+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product: tomato, Price: 1.50
+2024-11-15T11:40:17.274+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product: Product212, Price: 422.95
+2024-11-15T11:40:17.274+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product: Product892, Price: 502.28
+2024-11-15T11:40:17.274+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : User user2 is displaying all products
+2024-11-15T11:40:17.277+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product: tomato, Price: 1.50
+2024-11-15T11:40:17.277+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product: Product212, Price: 422.95
+2024-11-15T11:40:17.277+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product: Product892, Price: 502.28
+2024-11-15T11:40:17.277+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : User user2 is updating product with ID: 16
+2024-11-15T11:40:17.278+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product with ID 16 not found or could not be updated
+2024-11-15T11:40:17.279+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : User user2 is adding a new product
+2024-11-15T11:40:17.280+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : New product added: Product685
+2024-11-15T11:40:17.280+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : User user2 is updating product with ID: 80
+2024-11-15T11:40:17.282+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product with ID 80 not found or could not be updated
+2024-11-15T11:40:17.282+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : User user2 is updating product with ID: 64
+2024-11-15T11:40:17.283+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product with ID 64 not found or could not be updated
+2024-11-15T11:40:17.283+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : User user2 is creating a new user
+2024-11-15T11:40:17.285+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : New user created: Name69
+2024-11-15T11:40:17.285+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : User user2 is deleting product with ID: 17
+2024-11-15T11:40:17.286+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product with ID 17 not found or could not be deleted
+2024-11-15T11:40:17.286+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : User user2 is adding a new product
+2024-11-15T11:40:17.288+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : New product added: Product721
+2024-11-15T11:40:17.288+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : User user2 is fetching product with ID: 38
+2024-11-15T11:40:17.289+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product with ID 38 not found
+2024-11-15T11:40:17.290+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : User user2 is displaying all products
+2024-11-15T11:40:17.292+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product: tomato, Price: 1.50
+2024-11-15T11:40:17.292+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product: Product212, Price: 422.95
+2024-11-15T11:40:17.292+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product: Product892, Price: 502.28
+2024-11-15T11:40:17.293+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product: Product685, Price: 248.84
+2024-11-15T11:40:17.293+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product: Product721, Price: 888.71
+2024-11-15T11:40:17.293+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : User user2 is updating product with ID: 43
+2024-11-15T11:40:17.295+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product with ID 43 not found or could not be updated
+2024-11-15T11:40:17.295+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : User user2 is adding a new product
+2024-11-15T11:40:17.297+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : New product added: Product576
+2024-11-15T11:40:17.298+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : User user2 is deleting product with ID: 87
+2024-11-15T11:40:17.299+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product with ID 87 not found or could not be deleted
+2024-11-15T11:40:17.299+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : User user2 is updating product with ID: 100
+2024-11-15T11:40:17.300+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product with ID 100 not found or could not be updated
+2024-11-15T11:40:17.300+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : User user2 is creating a new user
+2024-11-15T11:40:17.303+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : New user created: Name72
+2024-11-15T11:40:17.304+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : User user2 is deleting product with ID: 13
+2024-11-15T11:40:17.304+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product with ID 13 not found or could not be deleted
+2024-11-15T11:40:17.305+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    :    Simulating scenarios for user: user3
+2024-11-15T11:40:17.305+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : User user3 is displaying all products
+2024-11-15T11:40:17.307+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product: tomato, Price: 1.50
+2024-11-15T11:40:17.307+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product: Product212, Price: 422.95
+2024-11-15T11:40:17.308+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product: Product892, Price: 502.28
+2024-11-15T11:40:17.308+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product: Product685, Price: 248.84
+2024-11-15T11:40:17.308+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product: Product721, Price: 888.71
+2024-11-15T11:40:17.308+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product: Product576, Price: 670.31
+2024-11-15T11:40:17.308+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : User user3 is fetching product with ID: 94
+2024-11-15T11:40:17.310+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product with ID 94 not found
+2024-11-15T11:40:17.310+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : User user3 is creating a new user
+2024-11-15T11:40:17.312+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : New user created: Name42
+2024-11-15T11:40:17.312+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : User user3 is adding a new product
+2024-11-15T11:40:17.314+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : New product added: Product283
+2024-11-15T11:40:17.315+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : User user3 is adding a new product
+2024-11-15T11:40:17.317+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : New product added: Product82
+2024-11-15T11:40:17.317+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : User user3 is displaying all products
+2024-11-15T11:40:17.320+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product: tomato, Price: 1.50
+2024-11-15T11:40:17.320+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product: Product212, Price: 422.95
+2024-11-15T11:40:17.320+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product: Product892, Price: 502.28
+2024-11-15T11:40:17.320+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product: Product685, Price: 248.84
+2024-11-15T11:40:17.320+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product: Product721, Price: 888.71
+2024-11-15T11:40:17.320+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product: Product576, Price: 670.31
+2024-11-15T11:40:17.320+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product: Product283, Price: 482.54
+2024-11-15T11:40:17.320+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product: Product82, Price: 183.12
+2024-11-15T11:40:17.320+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : User user3 is adding a new product
+2024-11-15T11:40:17.322+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : New product added: Product182
+2024-11-15T11:40:17.322+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : User user3 is displaying all products
+2024-11-15T11:40:17.326+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product: tomato, Price: 1.50
+2024-11-15T11:40:17.326+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product: Product212, Price: 422.95
+2024-11-15T11:40:17.326+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product: Product892, Price: 502.28
+2024-11-15T11:40:17.326+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product: Product685, Price: 248.84
+2024-11-15T11:40:17.326+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product: Product721, Price: 888.71
+2024-11-15T11:40:17.326+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product: Product576, Price: 670.31
+2024-11-15T11:40:17.326+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product: Product283, Price: 482.54
+2024-11-15T11:40:17.326+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product: Product82, Price: 183.12
+2024-11-15T11:40:17.326+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product: Product182, Price: 64.77
+2024-11-15T11:40:17.326+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : User user3 is updating product with ID: 1
+2024-11-15T11:40:17.327+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product with ID 1 not found or could not be updated
+2024-11-15T11:40:17.327+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : User user3 is fetching product with ID: 58
+2024-11-15T11:40:17.328+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product with ID 58 not found
+2024-11-15T11:40:17.328+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : User user3 is adding a new product
+2024-11-15T11:40:17.331+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : New product added: Product478
+2024-11-15T11:40:17.331+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : User user3 is updating product with ID: 41
+2024-11-15T11:40:17.332+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product with ID 41 not found or could not be updated
+2024-11-15T11:40:17.332+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : User user3 is deleting product with ID: 33
+2024-11-15T11:40:17.333+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product with ID 33 not found or could not be deleted
+2024-11-15T11:40:17.333+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : User user3 is deleting product with ID: 61
+2024-11-15T11:40:17.333+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product with ID 61 not found or could not be deleted
+2024-11-15T11:40:17.333+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : User user3 is displaying all products
+2024-11-15T11:40:17.337+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product: tomato, Price: 1.50
+2024-11-15T11:40:17.337+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product: Product212, Price: 422.95
+2024-11-15T11:40:17.337+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product: Product892, Price: 502.28
+2024-11-15T11:40:17.337+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product: Product685, Price: 248.84
+2024-11-15T11:40:17.337+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product: Product721, Price: 888.71
+2024-11-15T11:40:17.337+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product: Product576, Price: 670.31
+2024-11-15T11:40:17.337+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product: Product283, Price: 482.54
+2024-11-15T11:40:17.337+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product: Product82, Price: 183.12
+2024-11-15T11:40:17.337+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product: Product182, Price: 64.77
+2024-11-15T11:40:17.337+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product: Product478, Price: 909.87
+2024-11-15T11:40:17.337+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : User user3 is adding a new product
+2024-11-15T11:40:17.339+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : New product added: Product905
+2024-11-15T11:40:17.340+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : User user3 is updating product with ID: 93
+2024-11-15T11:40:17.341+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product with ID 93 not found or could not be updated
+2024-11-15T11:40:17.341+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : User user3 is deleting product with ID: 77
+2024-11-15T11:40:17.342+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product with ID 77 not found or could not be deleted
+2024-11-15T11:40:17.342+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : User user3 is fetching product with ID: 92
+2024-11-15T11:40:17.342+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product with ID 92 not found
+2024-11-15T11:40:17.343+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : User user3 is fetching product with ID: 92
+2024-11-15T11:40:17.346+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product with ID 92 not found
+2024-11-15T11:40:17.346+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    :    Simulating scenarios for user: user4
+2024-11-15T11:40:17.346+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : User user4 is displaying all products
+2024-11-15T11:40:17.349+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product: tomato, Price: 1.50
+2024-11-15T11:40:17.350+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product: Product212, Price: 422.95
+2024-11-15T11:40:17.350+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product: Product892, Price: 502.28
+2024-11-15T11:40:17.350+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product: Product685, Price: 248.84
+2024-11-15T11:40:17.350+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product: Product721, Price: 888.71
+2024-11-15T11:40:17.351+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product: Product576, Price: 670.31
+2024-11-15T11:40:17.351+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product: Product283, Price: 482.54
+2024-11-15T11:40:17.351+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product: Product82, Price: 183.12
+2024-11-15T11:40:17.351+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product: Product182, Price: 64.77
+2024-11-15T11:40:17.351+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product: Product478, Price: 909.87
+2024-11-15T11:40:17.351+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product: Product905, Price: 462.54
+2024-11-15T11:40:17.351+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : User user4 is updating product with ID: 21
+2024-11-15T11:40:17.353+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product with ID 21 not found or could not be updated
+2024-11-15T11:40:17.353+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : User user4 is displaying all products
+2024-11-15T11:40:17.357+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product: tomato, Price: 1.50
+2024-11-15T11:40:17.358+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product: Product212, Price: 422.95
+2024-11-15T11:40:17.358+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product: Product892, Price: 502.28
+2024-11-15T11:40:17.358+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product: Product685, Price: 248.84
+2024-11-15T11:40:17.358+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product: Product721, Price: 888.71
+2024-11-15T11:40:17.358+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product: Product576, Price: 670.31
+2024-11-15T11:40:17.358+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product: Product283, Price: 482.54
+2024-11-15T11:40:17.358+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product: Product82, Price: 183.12
+2024-11-15T11:40:17.358+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product: Product182, Price: 64.77
+2024-11-15T11:40:17.358+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product: Product478, Price: 909.87
+2024-11-15T11:40:17.358+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product: Product905, Price: 462.54
+2024-11-15T11:40:17.358+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : User user4 is creating a new user
+2024-11-15T11:40:17.361+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : New user created: Name18
+2024-11-15T11:40:17.361+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : User user4 is updating product with ID: 88
+2024-11-15T11:40:17.363+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product with ID 88 not found or could not be updated
+2024-11-15T11:40:17.363+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : User user4 is deleting product with ID: 64
+2024-11-15T11:40:17.365+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product with ID 64 not found or could not be deleted
+2024-11-15T11:40:17.365+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : User user4 is deleting product with ID: 4
+2024-11-15T11:40:17.366+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product with ID 4 not found or could not be deleted
+2024-11-15T11:40:17.366+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : User user4 is fetching product with ID: 86
+2024-11-15T11:40:17.367+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product with ID 86 not found
+2024-11-15T11:40:17.367+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : User user4 is deleting product with ID: 99
+2024-11-15T11:40:17.368+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product with ID 99 not found or could not be deleted
+2024-11-15T11:40:17.368+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : User user4 is fetching product with ID: 51
+2024-11-15T11:40:17.369+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product with ID 51 not found
+2024-11-15T11:40:17.369+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : User user4 is fetching product with ID: 81
+2024-11-15T11:40:17.370+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product with ID 81 not found
+2024-11-15T11:40:17.370+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : User user4 is updating product with ID: 80
+2024-11-15T11:40:17.372+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product with ID 80 not found or could not be updated
+2024-11-15T11:40:17.372+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : User user4 is creating a new user
+2024-11-15T11:40:17.375+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : New user created: Name61
+2024-11-15T11:40:17.375+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : User user4 is fetching product with ID: 52
+2024-11-15T11:40:17.376+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product with ID 52 not found
+2024-11-15T11:40:17.376+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : User user4 is fetching product with ID: 78
+2024-11-15T11:40:17.377+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product with ID 78 not found
+2024-11-15T11:40:17.377+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : User user4 is updating product with ID: 42
+2024-11-15T11:40:17.378+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product with ID 42 not found or could not be updated
+2024-11-15T11:40:17.378+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : User user4 is updating product with ID: 48
+2024-11-15T11:40:17.380+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product with ID 48 not found or could not be updated
+2024-11-15T11:40:17.380+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : User user4 is fetching product with ID: 73
+2024-11-15T11:40:17.381+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product with ID 73 not found
+2024-11-15T11:40:17.381+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : User user4 is deleting product with ID: 55
+2024-11-15T11:40:17.382+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product with ID 55 not found or could not be deleted
+2024-11-15T11:40:17.382+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : User user4 is creating a new user
+2024-11-15T11:40:17.384+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : New user created: Name56
+2024-11-15T11:40:17.384+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    :    Simulating scenarios for user: user5
+2024-11-15T11:40:17.384+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : User user5 is creating a new user
+2024-11-15T11:40:17.387+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : New user created: Name89
+2024-11-15T11:40:17.387+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : User user5 is adding a new product
+2024-11-15T11:40:17.390+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : New product added: Product519
+2024-11-15T11:40:17.390+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : User user5 is fetching product with ID: 4
+2024-11-15T11:40:17.391+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product with ID 4 not found
+2024-11-15T11:40:17.392+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : User user5 is updating product with ID: 2
+2024-11-15T11:40:17.394+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product with ID 2 not found or could not be updated
+2024-11-15T11:40:17.395+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : User user5 is deleting product with ID: 53
+2024-11-15T11:40:17.396+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product with ID 53 not found or could not be deleted
+2024-11-15T11:40:17.397+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : User user5 is deleting product with ID: 2
+2024-11-15T11:40:17.399+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product with ID 2 not found or could not be deleted
+2024-11-15T11:40:17.399+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : User user5 is adding a new product
+2024-11-15T11:40:17.401+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : New product added: Product594
+2024-11-15T11:40:17.401+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : User user5 is creating a new user
+2024-11-15T11:40:17.404+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : New user created: Name27
+2024-11-15T11:40:17.404+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : User user5 is deleting product with ID: 17
+2024-11-15T11:40:17.405+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product with ID 17 not found or could not be deleted
+2024-11-15T11:40:17.405+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : User user5 is creating a new user
+2024-11-15T11:40:17.408+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : New user created: Name98
+2024-11-15T11:40:17.408+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : User user5 is updating product with ID: 43
+2024-11-15T11:40:17.409+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product with ID 43 not found or could not be updated
+2024-11-15T11:40:17.409+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : User user5 is creating a new user
+2024-11-15T11:40:17.411+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : New user created: Name72
+2024-11-15T11:40:17.411+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : User user5 is displaying all products
+2024-11-15T11:40:17.418+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product: tomato, Price: 1.50
+2024-11-15T11:40:17.418+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product: Product212, Price: 422.95
+2024-11-15T11:40:17.418+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product: Product892, Price: 502.28
+2024-11-15T11:40:17.418+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product: Product685, Price: 248.84
+2024-11-15T11:40:17.418+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product: Product721, Price: 888.71
+2024-11-15T11:40:17.418+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product: Product576, Price: 670.31
+2024-11-15T11:40:17.418+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product: Product283, Price: 482.54
+2024-11-15T11:40:17.418+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product: Product82, Price: 183.12
+2024-11-15T11:40:17.418+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product: Product182, Price: 64.77
+2024-11-15T11:40:17.418+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product: Product478, Price: 909.87
+2024-11-15T11:40:17.418+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product: Product905, Price: 462.54
+2024-11-15T11:40:17.419+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product: Product519, Price: 43.25
+2024-11-15T11:40:17.419+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product: Product594, Price: 582.75
+2024-11-15T11:40:17.419+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : User user5 is updating product with ID: 91
+2024-11-15T11:40:17.428+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product with ID 91 not found or could not be updated
+2024-11-15T11:40:17.428+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : User user5 is fetching product with ID: 95
+2024-11-15T11:40:17.429+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product with ID 95 not found
+2024-11-15T11:40:17.429+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : User user5 is creating a new user
+2024-11-15T11:40:17.432+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : New user created: Name34
+2024-11-15T11:40:17.432+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : User user5 is fetching product with ID: 67
+2024-11-15T11:40:17.434+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product with ID 67 not found
+2024-11-15T11:40:17.434+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : User user5 is updating product with ID: 59
+2024-11-15T11:40:17.435+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product with ID 59 not found or could not be updated
+2024-11-15T11:40:17.435+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : User user5 is fetching product with ID: 79
+2024-11-15T11:40:17.437+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product with ID 79 not found
+2024-11-15T11:40:17.437+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : User user5 is displaying all products
+2024-11-15T11:40:17.447+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product: tomato, Price: 1.50
+2024-11-15T11:40:17.447+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product: Product212, Price: 422.95
+2024-11-15T11:40:17.447+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product: Product892, Price: 502.28
+2024-11-15T11:40:17.448+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product: Product685, Price: 248.84
+2024-11-15T11:40:17.448+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product: Product721, Price: 888.71
+2024-11-15T11:40:17.448+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product: Product576, Price: 670.31
+2024-11-15T11:40:17.448+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product: Product283, Price: 482.54
+2024-11-15T11:40:17.448+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product: Product82, Price: 183.12
+2024-11-15T11:40:17.448+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product: Product182, Price: 64.77
+2024-11-15T11:40:17.448+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product: Product478, Price: 909.87
+2024-11-15T11:40:17.448+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product: Product905, Price: 462.54
+2024-11-15T11:40:17.448+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product: Product519, Price: 43.25
+2024-11-15T11:40:17.448+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Product: Product594, Price: 582.75
+2024-11-15T11:40:17.448+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : Scenarios simulation completed.
+
+2024-11-15T11:40:17.686+01:00  INFO 4592 --- [TP3] [main] org.example.tp3.MainScenarioSimulator    : User profiles have been saved to user_profiles.json
+2024-11-15T11:41:45.182+01:00  INFO 4592 --- [TP3] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-15T11:41:45.184+01:00  INFO 4592 --- [TP3] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-11-15T11:41:45.185+01:00  INFO 4592 --- [TP3] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

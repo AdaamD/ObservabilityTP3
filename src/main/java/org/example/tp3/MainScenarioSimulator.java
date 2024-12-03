@@ -1,5 +1,9 @@
 package org.example.tp3;
 
+import lps.LPS;
+import lps.LogParser;
+import lps.ProfileBuilder;
+import lps.UserProfile;
 import model.Product;
 import model.User;
 import org.springframework.boot.SpringApplication;
@@ -10,11 +14,15 @@ import org.slf4j.LoggerFactory;
 import org.springframework.dao.DataIntegrityViolationException;
 import service.ProductService;
 import service.UserService;
+import com.fasterxml.jackson.databind.ObjectMapper;
 
 import java.math.BigDecimal;
 import java.time.LocalDate;
 import java.util.Random;
-
+import java.util.List;
+import java.util.Map;
+import java.io.File;
+import java.io.IOException;
 @SpringBootApplication
 public class MainScenarioSimulator {
     private static final Logger logger = LoggerFactory.getLogger(MainScenarioSimulator.class);
@@ -31,6 +39,23 @@ public class MainScenarioSimulator {
         simulateScenarios(5, 20);
         logger.info("Scenarios simulation completed.\n");
 
+        // Analyse des logs et création des profils utilisateurs
+        try {
+            List<LPS> logEntries = LogParser.parseLogs("logs/application.log");
+            Map<String, UserProfile> profiles = ProfileBuilder.buildProfiles(logEntries);
+
+            // Affichage des profils
+            for (UserProfile profile : profiles.values()) {
+                System.out.println(profile);
+            }
+
+            // Sauvegarde des profils en JSON
+            ObjectMapper mapper = new ObjectMapper();
+            mapper.writeValue(new File("user_profiles.json"), profiles);
+            logger.info("User profiles have been saved to user_profiles.json");
+        } catch (IOException e) {
+            logger.error("Error while parsing logs or saving profiles: ", e);
+        }
     }
 
     private static void simulateScenarios(int userCount, int scenariosPerUser) {
@@ -66,7 +91,6 @@ public class MainScenarioSimulator {
                 break;
         }
     }
-
     private static void createUserScenario(String userId) {
         logger.info("User {} is creating a new user", userId);
         String name = "Name" + random.nextInt(100);
